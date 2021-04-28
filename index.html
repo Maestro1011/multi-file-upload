@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiple File Upload</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="drop-area">
+  <form class="my-form">
+    <p>Upload multiple files with the file dialog or by dragging and dropping images onto the dashed region</p>
+    <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+    <label class="button" for="fileElem">Select some files</label>
+  </form>
+  <div class="progress">
+  	<span>0%</span>
+  <progress id="progress-bar" max=100 value=0></progress>
+  	<span>100%</span>
+</div>
+  <div id="gallery"></div>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
