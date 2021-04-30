@@ -9,15 +9,20 @@
 <div id="drop-area">
   <form class="my-form">
     <p>Upload multiple files with the file dialog or by dragging and dropping images onto the dashed region</p>
+    <!-- Simple patagraph -->
     <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+    <!-- An input field -->
     <label class="button" for="fileElem">Select some files</label>
+    <!-- Button  -->
   </form>
   <div class="progress">
   	<span>0%</span>
   <progress id="progress-bar" max=100 value=0></progress>
+  <!-- Progress bar starts with 0 and shows the upload progress of the file -->
   	<span>100%</span>
 </div>
   <div id="gallery"></div>
+  <!-- Dynamically creates divs after the files is uploaded -->
 </div>
 
 <script type="text/javascript" src="script.js"></script>
